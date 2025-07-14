@@ -3,6 +3,6 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/svelte-about-me',//KWK-scrollytelling
+  base: '/svelte-about-me',//about-me-svelte
   plugins: [svelte()],
 })
