@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    import Scroller from '../components/Scroller.svelte';
+    import ArticleText from '../components/ArticleText.svelte';
+  </script>
+
+<div>
+ <Scroller layout="left">
+    
+        <ArticleText>
+          <h1>Alicia Tesch</h1>
+
+          <h2>Bio</h2>
+          <p>
+            I am a student at Rochester Institute of Technology majoring in Computer Science.
+            I have a passion for coding, music, and F1/cars.
+            In my free time, I enjoy exploring nature and taking pictures.
+          </p>
+
+          <h2>Things That Represent Me</h2>
+          <div class="image-gallery">
+            <img src="IMG_4948 copy.JPG" alt="Nature">
+            <img src="IMG_6767 copy.jpeg" alt="Sunflower">
+            <img src="Image copy.jpg" alt="Music">
+            <img src="IMG_6391 copy.jpeg" alt="Cars">
+            <img src="IMG_3170 copy.JPG" alt="Me">
+          </div>
+     
+          <h2>interests & Links</h2>
+          <div class="link-container">
+            <a href="https://www.instagram.com/kodewithklossy/?hl=en" target="_blank">KWK</a>
+            <a href="https://www.formula1.com" target="_blank">F1</a>
+            <a href="https://www.instagram.com/rit_wic/?hl=en" target="_blank">RIT WiC</a>
+          </div>
+        
+          <h2>Coding Journey + KWK</h2>
+          <p>
+            I started coding at 14 years old, initially learning to code robots in C++ and Python and then transitioning to learning Data Science with KWK. 
+            I joined the KWK program to enhance my coding skills and connect with like-minded individuals.
+            KWK has been a great platform for me to learn and grow, and I am excited to continue my journey in coding and technology.
+            Now I am a rising sophomore at RIT, where I am furthering my studies in Computer Science and exploring new areas of technology.
+          </p>
+         
+            <h2>3 Fun Facts</h2>
+              <div class="fun-facts">
+                <ul>
+                  <li>I've been to 15 countries and lived on 3 continents.</li>
+                  <li>I love going camping and hiking to explore nature and take pictures.</li>
+                  <li>I like building LEGO Technic cars.</li>
+                </ul>
+              </div>
+          </ArticleText>
+  </Scroller>
+</div>
+
+<style>
+     body {
+            font-family: "Copperplate", fantasy;
+            background: linear-gradient(to right, #002c04, #1e1b41);
+            color: #7cffda;
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 900px;
+     }
+     
+    h1, h2, h3, h4, h5, h6 {
+      color: #29f541;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 2.1rem;
+      font-family: "Lucida Handwriting", cursive;
+      text-align: justify;
+    }
+        
+    img {
+      width: 200px;
+      height: auto;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(-2deg);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: rotate(2deg);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .image-gallery img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(90, 0, 86, 0.2);
+    }
+
+    a {
+        display: inline-block;
+        object-position: center;
+        color: #033b42;
+        background-color: #487870;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 5px 10px 5px 0;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .link-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    a:hover {
+        background-color: #00695c;
+        color: #3f0439;   
+    }
+
+    .fun-facts {
+        background-color: rgba(0, 5, 2, 0.1);
+        padding: 15px;
+        border-left: 5px solid #035c32;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+</style>
+</html>
