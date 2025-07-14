@@ -1,9 +1,9 @@
 {
-  "name": "KWK-scrollytelling",
+  "name": "about-me-svelte",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prettyliving.github.io/KWK-scrollytelling",
+  "homepage": "https://prettyliving.github.io/about-me-svelte",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
